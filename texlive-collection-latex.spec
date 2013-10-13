@@ -1,4 +1,4 @@
-# revision 25030
+# revision 30308
 # category Collection
 # catalog-ctan undef
 # catalog-date undef
@@ -6,9 +6,9 @@
 # catalog-version undef
 Name:		texlive-collection-latex
 Epoch:		1
-Version:	20120224
+Version:	20131013
 Release:	1
-Summary:	Basic LaTeX packages
+Summary:	LaTeX fundamental packages
 Group:		Publishing
 URL:		http://tug.org/texlive
 License:	http://www.tug.org/texlive/LICENSE.TL
@@ -21,6 +21,7 @@ Requires:	texlive-ae
 Requires:	texlive-amscls
 Requires:	texlive-amsmath
 Requires:	texlive-babel
+Requires:	texlive-babel-english
 Requires:	texlive-babelbib
 Requires:	texlive-carlisle
 Requires:	texlive-colortbl
@@ -57,12 +58,3 @@ very strongly recommended.
 %build
 
 %install
-
-
-%changelog
-* Fri Feb 24 2012 Paulo Andrade <pcpa@mandriva.com.br> 1:20120224-1
-+ Revision: 780459
-- Update to latest release.
-- Import texlive-collection-latex
-- Import texlive-collection-latex
-
