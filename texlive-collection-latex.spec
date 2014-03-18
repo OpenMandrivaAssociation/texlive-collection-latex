@@ -1,4 +1,4 @@
-# revision 30308
+# revision 33055
 # category Collection
 # catalog-ctan undef
 # catalog-date undef
@@ -6,8 +6,8 @@
 # catalog-version undef
 Name:		texlive-collection-latex
 Epoch:		1
-Version:	20131013
-Release:	5
+Version:	20140318
+Release:	1
 Summary:	LaTeX fundamental packages
 Group:		Publishing
 URL:		http://tug.org/texlive
@@ -43,10 +43,11 @@ Requires:	texlive-pslatex
 Requires:	texlive-psnfss
 Requires:	texlive-pspicture
 Requires:	texlive-tools
+Requires:	texlive-url
 
 %description
-These packages are mandated by the core LaTeX team, or at least
-very strongly recommended.
+These packages are either mandated by the core LaTeX team, or
+very widely used and strongly recommended in practice.
 
 #-----------------------------------------------------------------------
 %files
