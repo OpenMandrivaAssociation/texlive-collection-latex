@@ -7,7 +7,7 @@
 Name:		texlive-collection-latex
 Epoch:		1
 Version:	20140318
-Release:	5
+Release:	6
 Summary:	LaTeX fundamental packages
 Group:		Publishing
 URL:		http://tug.org/texlive
@@ -31,6 +31,7 @@ Requires:	texlive-geometry
 Requires:	texlive-graphics
 Requires:	texlive-hyperref
 Requires:	texlive-latex
+Requires:	texlive-latex-bin
 Requires:	texlive-latex-fonts
 Requires:	texlive-latexconfig
 Requires:	texlive-ltxmisc
