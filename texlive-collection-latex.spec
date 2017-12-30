@@ -6,8 +6,8 @@
 # catalog-version undef
 Name:		texlive-collection-latex
 Epoch:		1
-Version:	20140318
-Release:	6
+Version:	20170414
+Release:	1
 Summary:	LaTeX fundamental packages
 Group:		Publishing
 URL:		http://tug.org/texlive
