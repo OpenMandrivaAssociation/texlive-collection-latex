@@ -6,7 +6,7 @@ Summary:	LaTeX fundamental packages
 Group:		Publishing
 URL:		http://tug.org/texlive
 License:	http://www.tug.org/texlive/LICENSE.TL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/collection-latex.r63515.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/collection-latex.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
