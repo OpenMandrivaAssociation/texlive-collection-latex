@@ -1,18 +1,12 @@
-# revision 33055
-# category Collection
-# catalog-ctan undef
-# catalog-date undef
-# catalog-license undef
-# catalog-version undef
 Name:		texlive-collection-latex
 Epoch:		1
-Version:	20190228
+Version:	63515
 Release:	1
 Summary:	LaTeX fundamental packages
 Group:		Publishing
 URL:		http://tug.org/texlive
 License:	http://www.tug.org/texlive/LICENSE.TL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/collection-latex.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/collection-latex.r63515.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -55,7 +49,7 @@ very widely used and strongly recommended in practice.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0
+%autosetup -p1 -c
 
 %build
 
