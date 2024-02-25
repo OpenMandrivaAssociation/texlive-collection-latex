@@ -1,7 +1,7 @@
 Name:		texlive-collection-latex
 Epoch:		1
 Version:	69131
-Release:	1
+Release:	2
 Summary:	LaTeX fundamental packages
 Group:		Publishing
 URL:		http://tug.org/texlive
@@ -37,6 +37,7 @@ Requires:	texlive-pdftex-def
 Requires:	texlive-pslatex
 Requires:	texlive-psnfss
 Requires:	texlive-pspicture
+Requires:	texlive-tex-ini-files
 Requires:	texlive-tools
 Requires:	texlive-url
 
