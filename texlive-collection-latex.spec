@@ -1,7 +1,7 @@
 Name:		texlive-collection-latex
 Epoch:		1
-Version:	69131
-Release:	2
+Version:	71912
+Release:	1
 Summary:	LaTeX fundamental packages
 Group:		Publishing
 URL:		http://tug.org/texlive
