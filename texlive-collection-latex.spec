@@ -4,7 +4,7 @@ Version:	71912
 Release:	1
 Summary:	LaTeX fundamental packages
 Group:		Publishing
-URL:		http://tug.org/texlive
+URL:		https://tug.org/texlive
 License:	http://www.tug.org/texlive/LICENSE.TL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/collection-latex.r%{version}.tar.xz
 BuildArch:	noarch
