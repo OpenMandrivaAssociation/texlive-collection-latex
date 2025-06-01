@@ -1,6 +1,6 @@
 Name:		texlive-collection-latex
 Epoch:		1
-Version:	71912
+Version:	73720
 Release:	1
 Summary:	LaTeX fundamental packages
 Group:		Publishing
