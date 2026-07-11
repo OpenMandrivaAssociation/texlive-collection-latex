@@ -10,7 +10,9 @@ URL:		https://www.ctan.org/pkg/collection-latex
 License:	LPPL
 Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/collection-latex.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-Requires(pre):	texlive-tlpkg
+BuildSystem:	texlive
+BuildRequires:	texlive-tlpkg
+%texlive_base_requires
 Requires:	texlive(ae)
 Requires:	texlive(amscls)
 Requires:	texlive(amsmath)
@@ -81,31 +83,3 @@ Provides:	texlive(%{tl_name}) = %{tl_revision}
 These packages are either mandated by the core LaTeX team, or very
 widely used and strongly recommended in practice.
 
-%prep
-%setup -q -c
-rm -rf tlpkg
-if [ -d RELOC ]; then
-	cp -a RELOC/. .
-	rm -rf RELOC
-fi
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_datadir}/texmf-dist
-# Flat tlnet layout: tex/ doc/ source/ fonts/ ... -> texmf-dist/
-if [ -d texmf-dist ]; then
-	cp -a texmf-dist/. %{buildroot}%{_datadir}/texmf-dist/
-elif [ -d texmf ]; then
-	mkdir -p %{buildroot}%{_datadir}/texmf
-	cp -a texmf/. %{buildroot}%{_datadir}/texmf/
-else
-	for d in * .[!.]* ..?*; do
-		[ -e "$d" ] || continue
-		case "$d" in tlpkg|RELOC) continue ;; esac
-		cp -a "$d" %{buildroot}%{_datadir}/texmf-dist/
-	done
-fi
-rm -rf %{buildroot}%{_datadir}/texmf-dist/tlpkg
-
-%files
